@@ -709,6 +709,9 @@ highlight! link typescriptInterpolationDelimiter Purple
 highlight! link typescriptBraces Fg
 highlight! link typescriptParens Fg
 " }}}
+" Me:
+highlight! link typescriptFunction Green
+highlight! link typescriptFuncCall Green
 " yats: https:github.com/HerringtonDarkholme/yats.vim{{{
 highlight! link typescriptMethodAccessor Red
 highlight! link typescriptVariable Red
@@ -1514,9 +1517,9 @@ highlight! link CocExplorerFileRootName Orange
 highlight! link CocExplorerBufferNameVisible Green
 " }}}
 " dense-analysis/ale{{{
-call s:HL('ALEError', s:palette.none, s:palette.none, 'undercurl', s:palette.red)
-call s:HL('ALEWarning', s:palette.none, s:palette.none, 'undercurl', s:palette.yellow)
-call s:HL('ALEInfo', s:palette.none, s:palette.none, 'undercurl', s:palette.blue)
+call s:HL('ALEError', s:palette.none, s:palette.none, 'underline', s:palette.red)
+call s:HL('ALEWarning', s:palette.none, s:palette.none, 'underline', s:palette.red)
+call s:HL('ALEInfo', s:palette.none, s:palette.none, 'underline', s:palette.red)
 if s:configuration.transparent_background
   call s:HL('ALEErrorSign', s:palette.red, s:palette.none)
   call s:HL('ALEWarningSign', s:palette.yellow, s:palette.none)
